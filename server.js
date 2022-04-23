@@ -46,7 +46,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/socket.io", (req, res) => {
+app.get("/", (req, res) => {
   res.send({ res: "I am alive" });
 });
 io.on("connection", (socket) => {
